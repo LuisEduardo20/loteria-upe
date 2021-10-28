@@ -6,6 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
+
     	// Resultado Mega Sena
     	ResultadoMegasena resultadoMegaSena = new ResultadoMegasena("mega-sena");
         String resultado = resultadoMegaSena.obtemUltimoResultado();
