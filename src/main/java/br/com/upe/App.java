@@ -1,22 +1,22 @@
 package br.com.upe;
 
-import br.com.upe.ResultadoMegasena;
+import br.com.upe.ResultadoLoteria;
 
 public class App {
     public static void main(String[] args) {
 
         // Resultado Mega Sena
-        ResultadoMegasena resultadoMegaSena = new ResultadoMegasena("mega-sena");
+        ResultadoLoteria resultadoMegaSena = new ResultadoLoteria("mega-sena");
         String resultado = resultadoMegaSena.obtemUltimoResultado();
         System.out.println("Mega sena:" + resultado);
 
         // Resultado Time mania
-        ResultadoMegasena resultadoTimemania = new ResultadoMegasena("timemania");
+        ResultadoLoteria resultadoTimemania = new ResultadoLoteria("timemania");
         String resultado3 = resultadoTimemania.obtemUltimoResultado();
         System.out.println("Timemania:" + resultado3);
 
         // Resultado Quina
-        ResultadoMegasena resultadoQuina = new ResultadoMegasena("quina");
+        ResultadoLoteria resultadoQuina = new ResultadoLoteria("quina");
         String resultado2 = resultadoQuina.obtemUltimoResultado();
         System.out.println("Quina:" + resultado2);
     }
