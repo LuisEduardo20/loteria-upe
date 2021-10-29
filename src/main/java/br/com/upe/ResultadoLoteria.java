@@ -9,12 +9,10 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import java.io.IOException;
 
-public class ResultadoMegasena {
-
+public class ResultadoLoteria {
 	private static String MARCA_INICIAL_RETORNO_NAO_UTIL;
 
-	public ResultadoMegasena(String nomeSorteio) {
-
+	public ResultadoLoteria(String nomeSorteio) {
 		this.MARCA_INICIAL_RETORNO_NAO_UTIL = "<ul class=\"resultado-loteria " + nomeSorteio + "\">";
 	}
 
@@ -47,13 +45,13 @@ public class ResultadoMegasena {
 
 		String extracao = html.substring(parteInicial, parteFinal).replaceAll("[^0-9]", "");
 
-		String teste = "";
+		String resultado = "";
 		for (int i = 0; i < extracao.length(); i += 2) {
-			teste += " ";
-			teste += extracao.substring(i, i + 2);
+			resultado += " ";
+			resultado += extracao.substring(i, i + 2);
 		}
 
-		return teste;
+		return resultado;
 
 	}
 }
