@@ -2,7 +2,8 @@ name: Manual Undo Push Action
 on: 
   workflow_dispatch:
     inputs:
-      branch: developer
+      branch:
+        description: 'Branch to undo commit'
         required: true
         default: 'main'
 
