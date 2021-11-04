@@ -45,13 +45,18 @@ public class ResultadoLoteria {
 
 		String extracao = html.substring(parteInicial, parteFinal).replaceAll("[^0-9]", "");
 
+		return extracao;
+
+	}
+
+	public static String resultadoFormatado(String extracao) {
 		String resultado = "";
+
 		for (int i = 0; i < extracao.length(); i += 2) {
 			resultado += " ";
 			resultado += extracao.substring(i, i + 2);
 		}
 
 		return resultado;
-
 	}
 }
