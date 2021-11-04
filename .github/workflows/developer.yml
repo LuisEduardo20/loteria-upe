@@ -20,6 +20,14 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+      if: failure()
+      - name: Reset para o últmo commit
+      with:
+        run: git reset --hard HEAD~1
+
+        - name: Rebuild na versão anterior
+        run: mvn -B package --file pom.xml
+
     - name: Send mail
       if: always()
       uses: dawidd6/action-send-mail@v2
