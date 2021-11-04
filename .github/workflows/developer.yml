@@ -19,8 +19,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Reset para build anterior
       if: failure()
-      - name: Reset para o últmo commit
       with:
         run: git reset --hard HEAD~1
         run: mvn -B package --file pom.xml
