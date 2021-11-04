@@ -7,34 +7,32 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{ 
+public class AppTest {
     @Test
     public void verificarDezenaMegasena() {
-    	
-    	ResultadoLoteria resultadoMegaSena = new ResultadoLoteria("mega-sena");
+
+        ResultadoLoteria resultadoMegaSena = new ResultadoLoteria("mega-sena");
         String resultado = resultadoMegaSena.obtemUltimoResultado();
-    	
-		assertEquals(12, resultado.length());
+
+        assertEquals(12, resultado.length());
     }
-    
+
     @Test
     public void verificarDezenaTimemania() {
-    	
-    	ResultadoLoteria resultadoTimemania = new ResultadoLoteria("timemania");
+
+        ResultadoLoteria resultadoTimemania = new ResultadoLoteria("timemania");
         String resultado = resultadoTimemania.obtemUltimoResultado();
-    	
-		assertEquals(14, resultado.length());
+
+        assertEquals(14, resultado.length());
     }
-    
-    /*@Test
+
+    @Test
     public void verificarDezenaQuina() {
-    	
-    	ResultadoLoteria resultadoQuina = new ResultadoLoteria("quina");
+
+        ResultadoLoteria resultadoQuina = new ResultadoLoteria("quina");
         String resultado = resultadoQuina.obtemUltimoResultado();
-    	
-		assertEquals(10, resultado.length());
-		
-    }*/
-       
+        assertEquals(10, resultado.length());
+
+    }
+
 }
