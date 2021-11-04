@@ -27,14 +27,13 @@ public class AppTest
 		assertEquals(14, resultado.length());
     }
     
-    /*@Test
+    @Test
     public void verificarDezenaQuina() {
     	
     	ResultadoLoteria resultadoQuina = new ResultadoLoteria("quina");
         String resultado = resultadoQuina.obtemUltimoResultado();
     	
-		assertEquals(10, resultado.length());
-		
-    }*/
+		assertEquals(10, resultado.length());	
+    }
        
 }
