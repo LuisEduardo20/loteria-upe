@@ -34,6 +34,7 @@ public class AppTest
         String resultado = resultadoQuina.obtemUltimoResultado();
     	
 		assertEquals(10, resultado.length());
+		
     }
        
 }
