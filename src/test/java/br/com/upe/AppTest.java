@@ -31,7 +31,7 @@ public class AppTest {
 
         ResultadoLoteria resultadoQuina = new ResultadoLoteria("quina");
 
-        String resultado = resultadoQuina.obtemUltimoResultado()
+        String resultado = resultadoQuina.obtemUltimoResultado();
  	
 		assertEquals(10, resultado.length());	
     }
